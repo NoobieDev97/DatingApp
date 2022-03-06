@@ -7,10 +7,12 @@ using API.Entities;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
+
 namespace API.Controllers
 {
- [ApiController]
  [Route("api/[controller]")]
+ [ApiController]
+
 
  public class UsersController : ControllerBase
  {
@@ -29,6 +31,7 @@ namespace API.Controllers
   }
 
   [HttpGet("{id}")]
+
 
   public async Task<ActionResult<AppUser>> GetUser(int id)
   {
